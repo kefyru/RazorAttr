@@ -1,0 +1,28 @@
+<div class="@Class" style="@Style">
+    <h3 class="@HeaderClass" style="@HeaderStyle">@Header</h3>
+    @Text
+</div>
+
+@code {
+
+    [Parameter]
+    [CssClass]
+    public string HeaderClass { get; set; }
+
+    [Parameter]
+    [CssStyle]
+    public string HeaderStyle { get; set; }
+    
+    [Parameter]
+    public string Header { get; set; } 
+
+    [Parameter]
+    public string Class { get; set; }
+
+    [Parameter]
+    public string Style { get; set; }
+    
+    [Parameter]
+    public string Text { get; set; }
+
+}
